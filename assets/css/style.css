@@ -1,0 +1,40 @@
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #05070d;
+            color: #f3f4f6;
+            overflow-x: hidden;
+        }
+        .animated-name-gradient {
+            background: linear-gradient(270deg, #3b82f6, #8b5cf6, #3b82f6, #6366f1);
+            background-size: 300% 300%;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: bluePurpleShift 5s ease infinite;
+        }
+        .glass-panel {
+            background: rgba(13, 19, 34, 0.75);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 1px solid rgba(59, 130, 246, 0.15);
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+        }
+        .glass-panel-hover:hover {
+            border-color: rgba(139, 92, 246, 0.5);
+            box-shadow: 0 15px 40px -10px rgba(59, 130, 246, 0.25);
+            transform: translateY(-4px);
+        }
+        /* Custom scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #05070d;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #1e3a8a;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #3b82f6;
+        }
+    
